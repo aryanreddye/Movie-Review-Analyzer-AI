@@ -1,6 +1,6 @@
-# Movie-Review-Analyzer-AI
+# Movie Review Analyzer
 
-A Python-based movie recommendation project.
+A movie review sentiment analyzer with a FastAPI backend and a React frontend.
 
 ## Project Structure
 
@@ -12,24 +12,44 @@ Movie-Review-Analyzer-AI/
 │   ├── model.joblib
 │   ├── requirements.txt
 │   └── .gitignore
+├── frontend/
+│   ├── src/
+│   ├── index.html
+│   └── package.json
 └── README.md
 ```
 
-## Setup
+## Run the app
 
-1. Clone this repository.
-2. Create and activate a Python virtual environment.
-3. Install the dependencies:
+### Backend
 
-   ```bash
-   pip install -r backend/requirements.txt
-   ```
+Create and activate a Python virtual environment, then install and run the API:
 
-4. Run the application using the appropriate command for `backend/main.py`.
+```bash
+pip install -r backend/requirements.txt
+uvicorn main:app --reload --app-dir backend
+```
+
+The API runs at `http://localhost:8000`.
+
+### Frontend
+
+In another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the Vite URL shown in the terminal (usually `http://localhost:5173`).
+The review form and result panel are ready for your API integration.
 
 ## Technologies
 
-- Python
+- React
+- Vite
+- FastAPI
 - scikit-learn
 - NLTK
 - Joblib
