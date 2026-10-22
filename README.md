@@ -1,11 +1,11 @@
-# Movie-Recommendation-AI
+# Movie-Review-Analyzer-AI
 
 A Python-based movie recommendation project.
 
 ## Project Structure
 
 ```text
-Movie-Recommendation-AI/
+Movie-Review-Analyzer-AI/
 ├── backend/
 │   ├── main.py
 │   ├── train.py
